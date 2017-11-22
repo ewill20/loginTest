@@ -1,0 +1,35 @@
+{
+  "name": "codingbootcamp",
+  "version": "1.0.0",
+  "description": "Using Passport and Sequelize and MySQL",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "browserify": "^14.4.0",
+    "chai": "^4.1.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "karma": "^1.7.1",
+    "karma-browserify": "^5.1.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-commonjs": "^1.0.0",
+    "karma-mocha-reporter": "^2.2.4",
+    "moment": "^2.19.1",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.22.11",
+    "watchify": "^3.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Eric Willard",
+  "license": "ISC"
+}
