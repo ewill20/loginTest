@@ -1,8 +1,8 @@
 {
-  "name": "codingbootcamp",
+  "name": "loginTest",
   "version": "1.0.0",
   "description": "Using Passport and Sequelize and MySQL",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
@@ -19,6 +19,7 @@
     "karma-mocha-reporter": "^2.2.4",
     "moment": "^2.19.1",
     "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^4.22.11",

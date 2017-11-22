@@ -4,6 +4,7 @@ var passport = require('passport');
 var session = require("express-session");
 var bodyParser = require('body-parser');
 var env = require('dotenv').load();
+var exphbs = require('express-handlebars')
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -28,5 +29,18 @@ app.listen(5000, function(err) {
     if (!err)
         console.log("Site is live");
     else console.log(err)
+ 
+});
+//Models
+var models = require("./app/models");
+ 
+//Sync Database
+models.sequelize.sync().then(function() {
+ 
+    console.log('Nice! Database looks fine')
+ 
+}).catch(function(err) {
+ 
+    console.log(err, "Something went wrong with the Database Update!")
  
 });
